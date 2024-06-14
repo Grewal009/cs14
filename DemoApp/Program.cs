@@ -2,7 +2,8 @@
 
 using DemoApp;
 
-Person person = new Person();
+Home home = new Home();
+Person person = new Person(home);
 person.TakeRefuge();
 person.Study();
 person.GetTreatment();

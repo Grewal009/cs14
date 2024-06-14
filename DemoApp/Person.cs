@@ -6,9 +6,9 @@ public class Person
     private School _school;
     private Hospital _hospital;
 
-    public Person()
+    public Person(Home home)
     {
-        _home = new Home();
+        _home = home;
         _school = new School();
         _hospital = new Hospital();
     }
