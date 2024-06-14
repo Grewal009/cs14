@@ -1,8 +1,8 @@
 namespace DemoApp;
 
-public class Hospital
+public class Hospital : IHospital
 {
-    public void Cure(Person person)
+    public void Cure(IPerson person)
     {
         Console.WriteLine("Cure person");
     }

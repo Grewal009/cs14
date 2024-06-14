@@ -1,9 +1,9 @@
 namespace DemoApp;
 
-public class School
+public class School : IEducationalInstitute
 {
-    public void Teach(Person person)
+    public void Teach(IPerson person)
     {
-        Console.WriteLine("Educate person");
+        Console.WriteLine("Educate person in school");
     }
 }

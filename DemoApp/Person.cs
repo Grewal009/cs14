@@ -1,18 +1,18 @@
 namespace DemoApp;
 
-public class Person
+public class Person : IPerson
 {
-    private Home _home;
-    private School _school;
+    private IHome _home;
+    private IEducationalInstitute _school;
 
-    public School School {
+    public IEducationalInstitute School {
         set
         {
             _school = value;
         }
     }
 
-    public Person(Home home)
+    public Person(IHome home)
     {
         _home = home;
     }
@@ -31,7 +31,7 @@ public class Person
         
     }
 
-    public void GetTreatment(Hospital hospital)
+    public void GetTreatment(IHospital hospital)
     {
         
         hospital.Cure(this);

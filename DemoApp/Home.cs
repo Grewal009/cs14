@@ -1,8 +1,8 @@
 namespace DemoApp;
 
-public class Home
+public class Home : IHome
 {
-    public void ProvideShelter(Person person)
+    public void ProvideShelter(IPerson person)
     {
         Console.WriteLine("Stay Home");
     }
