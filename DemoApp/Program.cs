@@ -3,7 +3,8 @@
 using DemoApp;
 
 Home home = new Home();
-Person person = new Person(home);
+Person person = new Person(home); // constructor injection
 person.TakeRefuge();
+person.School = new School(); // property injection
 person.Study();
-person.GetTreatment();
+person.GetTreatment();  

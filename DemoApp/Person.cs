@@ -6,10 +6,16 @@ public class Person
     private School _school;
     private Hospital _hospital;
 
+    public School School {
+        set
+        {
+            _school = value;
+        }
+    }
+
     public Person(Home home)
     {
         _home = home;
-        _school = new School();
         _hospital = new Hospital();
     }
 
@@ -20,7 +26,11 @@ public class Person
 
     public void Study()
     {
-        _school.Teach(this);
+        if (_school != null)
+        {
+            _school.Teach(this);
+        }
+        
     }
 
     public void GetTreatment()
