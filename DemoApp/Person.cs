@@ -4,7 +4,6 @@ public class Person
 {
     private Home _home;
     private School _school;
-    private Hospital _hospital;
 
     public School School {
         set
@@ -16,7 +15,6 @@ public class Person
     public Person(Home home)
     {
         _home = home;
-        _hospital = new Hospital();
     }
 
     public void TakeRefuge()
@@ -33,8 +31,9 @@ public class Person
         
     }
 
-    public void GetTreatment()
+    public void GetTreatment(Hospital hospital)
     {
-        _hospital.Cure(this);
+        
+        hospital.Cure(this);
     }
 }

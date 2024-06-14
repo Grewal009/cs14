@@ -7,4 +7,5 @@ Person person = new Person(home); // constructor injection
 person.TakeRefuge();
 person.School = new School(); // property injection
 person.Study();
-person.GetTreatment();  
+Hospital hospital = new Hospital();
+person.GetTreatment(hospital); // method injection 
